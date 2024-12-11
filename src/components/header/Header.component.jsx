@@ -148,7 +148,7 @@ function Header({ logoName = "Lock-Tech Fitness", logoSrc = mainlogo, logoAlt = 
                         {menuOpen ? (
                             <>
                             <button
-                            className="h-6 w-6 rounded-lg mr-2 hover:bg-gray-300 dark:hover:bg-gray-700" onClick={toggleDarkMode}>
+                            className="h-7 w-7 rounded-lg mr-2 hover:bg-gray-300 dark:hover:bg-gray-700" onClick={toggleDarkMode}>
                             {darkMode ? <img className="inline-block" src={sunIcon} alt="sun icon" /> : <img className="inline-block" src={moonIcon} alt="moon icon" />}
                             </button> 
                             <svg
@@ -170,7 +170,7 @@ function Header({ logoName = "Lock-Tech Fitness", logoSrc = mainlogo, logoAlt = 
                         ) : (
                             <>
                             <button
-                            className="h-6 w-6 rounded-lg mr-2 hover:bg-gray-300 dark:hover:bg-gray-700" onClick={toggleDarkMode}>
+                            className="h-7 w-7 rounded-lg mr-2 hover:bg-gray-300 dark:hover:bg-gray-700" onClick={toggleDarkMode}>
                             {darkMode ? <img className="inline-block" src={sunIcon} alt="sun icon" /> : <img className="inline-block" src={moonIcon} alt="moon icon" />}
                             </button>  
                             <svg
