@@ -6,7 +6,7 @@ import Modal from '../../components/logoutmodal/Modal.component';
 
 function Header({ logoName = "Lock-Tech Fitness", logoSrc = mainlogo, logoAlt = "LockTechFitness", btnText1 = "Sign Up", btnText2 = "Log In", btnText3 = "Log Out", onLogOutClick }) {
 
-    const moonIcon = '/moon.svg'; // Reference directly from the public directory
+    const moonIcon = '/moon.svg'; //  Reference directly from the public directory
     const sunIcon = '/sun.svg';
     const [user, setUser] = useState(null);
     const [showModal, setShowModal] = useState(false);
