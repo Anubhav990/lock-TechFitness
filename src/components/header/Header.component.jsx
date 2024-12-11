@@ -58,7 +58,7 @@ function Header({ logoName = "Lock-Tech Fitness", logoSrc = mainlogo, logoAlt = 
 
     return (
         <>
-            <div className="relative w-full md:bg-white bg-blue-100 dark:bg-gray-800 rounded font-robotoC">
+            <div className="relative w-full md:bg-white bg-blue-100 dark:bg-slate-700 md:dark:bg-gray-800 rounded font-robotoC">
                 <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-2 sm:px-6 lg:px-8">
                     <div className="inline-flex items-center space-x-2">
                         <span>
