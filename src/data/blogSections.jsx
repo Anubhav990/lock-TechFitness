@@ -59,10 +59,10 @@ export const blogSections = [
                 <p>
                     <span className="bg-blue-100 font-medium text-black">HIIT, featuring exercises like tire slams, tire hammer swings, burpees, battle ropes, jump squats & jumping jacks</span>, enhances cardiovascular health by challenging strength + endurance.Tire slams involve lifting, slamming a heavy tire, tire strikes use a sledgehammer to hit a tire, elevating the heart rate to improve heart health.</p>
 
-                <div className="flex flex-row  justify-center items-center my-6">
-                    <img src={tireslam} width="60" height="60" className="shadow-neon-blue inline align-middle my-4 mx-8 rounded-lg" />
-                    <img src={battlerope} width="60" height="60" className="shadow-neon-blue inline align-middle my-4 mx-8 rounded-lg" />
-                    <img src={jumpingjacks} width="60" height="60" className="shadow-neon-blue inline align-middle my-4 mx-8 rounded-lg" />
+                <div className="flex flex-row justify-center items-center my-6">
+                    <img src={tireslam} width="60" height="60" className="shadow-neon-blue dark:bg-slate-300 inline align-middle my-4 mx-8 rounded-lg" />
+                    <img src={battlerope} width="60" height="60" className="shadow-neon-blue dark:bg-slate-300 inline align-middle my-4 mx-8 rounded-lg" />
+                    <img src={jumpingjacks} width="60" height="60" className="shadow-neon-blue dark:bg-slate-300 inline align-middle my-4 mx-8 rounded-lg" />
                 </div>
                 <p>
                     Burpees build strength & cardio, battle ropes enhance upper body endurance, jump squats boost explosive power, while HIIT sessions of 15-30 minutes maximize calorie burn. <span className="bg-red-100 font-medium text-black">Start with 1 HIIT session every two weeks & increase to 1-2 per week for best results.</span></p>
@@ -71,9 +71,9 @@ export const blogSections = [
                 <p>
                     <span className="bg-blue-100 font-medium text-black">CrossFit metcons typically include Olympic lifts</span> & movements performed by Olympic lifters, integrating high-intensity workouts. Exercises like <span className="bg-red-100 font-medium text-black">snatches, clean and jerks & kettlebell swings.</span></p>
 
-                <div className="flex flex-row  justify-center items-center my-6">
-                    <img src={weightlifting} width="60" height="60" className="shadow-neon-blue inline align-middle my-4 mx-8 rounded-lg" />
-                    <img src={kettlebell} width="60" height="60" className="shadow-neon-blue inline align-middle my-4 mx-8 rounded-lg" />
+                <div className="flex flex-row  justify-center items-center my-6"> 
+                    <img src={weightlifting} width="60" height="60" className="shadow-neon-blue dark:bg-slate-300 inline align-middle my-4 mx-8 rounded-lg" />
+                    <img src={kettlebell} width="60" height="60" className="shadow-neon-blue dark:bg-slate-300 inline align-middle my-4 mx-8 rounded-lg" />
                 </div>
                 <p>
                     Often featured in <span className="bg-blue-100 font-medium text-black">AMRAP formats</span>, these workouts keep the heart rate high, boosting cardiovascular endurance & aerobic capacity. CrossFit metcons combine strength training with cardio, ultimately enhancing heart health.</p>
@@ -87,18 +87,18 @@ export const blogSections = [
                     <span className="text-black dark:text-white font-medium text-center">Original/Fundamental exercise</span>
 
                     {/* Right Arrow for larger screens */}
-                    <img src={rightarrow} width="25" height="25" className="hidden sm:inline text-black shadow-neon-blue inline align-middle mx-4 rounded-3xl" />
+                    <img src={rightarrow} width="25" height="25" className="hidden dark:bg-slate-300 sm:inline text-black shadow-neon-blue inline align-middle mx-4 rounded-3xl" />
 
                     {/* Down Arrow for mobile screens */}
-                    <img src={bottomarrow} width="25" height="25" className="inline sm:hidden text-black shadow-neon-blue inline align-middle my-4 rounded-3xl" />
+                    <img src={bottomarrow} width="25" height="25" className="inline dark:bg-slate-300 sm:hidden text-black shadow-neon-blue inline align-middle my-4 rounded-3xl" />
 
                     <span className="text-black dark:text-white font-medium text-center">Explosive Version of the Same Exercise</span>
 
                     {/* Right Arrow for larger screens */}
-                    <img src={rightarrow} width="25" height="25" className="hidden sm:inline text-black shadow-neon-blue inline align-middle mx-4 rounded-3xl" />
+                    <img src={rightarrow} width="25" height="25" className="hidden dark:bg-slate-300 sm:inline text-black shadow-neon-blue inline align-middle mx-4 rounded-3xl" />
 
                     {/* Down Arrow for mobile screens */}
-                    <img src={bottomarrow} width="25" height="25" className="inline sm:hidden text-black shadow-neon-blue inline align-middle my-4 rounded-3xl" />
+                    <img src={bottomarrow} width="25" height="25" className="inline dark:bg-slate-300 sm:hidden text-black shadow-neon-blue inline align-middle my-4 rounded-3xl" />
 
                     <span className="text-black dark:text-white font-medium text-center">Advanced Explosive Variations of the Exercise</span>
                 </div>
@@ -110,9 +110,9 @@ export const blogSections = [
                     <span className="bg-blue-100 font-medium text-black">In India, the prevalence of sugar, diabetes is rising</span>, largely <span className="bg-blue-100 font-medium text-black">due to diets that are high in carbohydrates, low in protein</span>. Our bodies need adequate protein intake, especially before bed, upon waking & after physical activity. <span className="bg-red-100 font-medium text-black">A carbohydrate-heavy diet leads to insulin resistance & increases risk of type 2 diabetes.</span></p>
 
                 <div className="flex flex-row  justify-center items-center my-6">
-                    <img src={fruits} width="60" height="60" className="shadow-neon-blue inline align-middle my-4 mx-8 rounded-lg" />
-                    <img src={protein} width="60" height="60" className="shadow-neon-blue inline align-middle my-4 mx-8 rounded-lg" />
-                    <img src={proteinpowder} width="60" height="60" className="shadow-neon-blue inline align-middle my-4 mx-8 rounded-lg" />
+                    <img src={fruits} width="60" height="60" className="shadow-neon-blue dark:bg-slate-300 inline align-middle my-4 mx-8 rounded-lg" />
+                    <img src={protein} width="60" height="60" className="shadow-neon-blue dark:bg-slate-300 inline align-middle my-4 mx-8 rounded-lg" />
+                    <img src={proteinpowder} width="60" height="60" className="shadow-neon-blue dark:bg-slate-300 inline align-middle my-4 mx-8 rounded-lg" />
                 </div>
                 <p>
                     Incorporate fish, eggs, chicken, or any other edible animal-based proteins to boost your protein, heathy fat intake. <span className="bg-blue-100 font-medium text-black">For vegetarians, whey protein</span> is an excellent choice, while <span className="bg-blue-100 font-medium text-black">vegans can opt for pea soy or rice protein as nutritious alternatives</span>. These supplements support overall well-being.</p>
@@ -122,8 +122,8 @@ export const blogSections = [
                     <span className="bg-red-100 font-medium text-black">Young people are increasingly facing heart attacks, largely due to stress</span>. The solution is simple: meditate regularly, practice gratitude & embrace life’s challenges. In times of adversity, instead of asking, “Why me?” consider, “What can I learn from this?”</p>
 
                 <div className="flex flex-row  justify-center items-center my-6">
-                    <img src={meditation} width="60" height="60" className="shadow-neon-blue inline align-middle my-4 mx-8 rounded-lg" />
-                    <img src={gratitude} width="60" height="60" className="shadow-neon-blue inline align-middle my-4 mx-8 rounded-lg" />
+                    <img src={meditation} width="60" height="60" className="shadow-neon-blue dark:bg-slate-300 inline align-middle my-4 mx-8 rounded-lg" />
+                    <img src={gratitude} width="60" height="60" className="shadow-neon-blue dark:bg-slate-300 inline align-middle my-4 mx-8 rounded-lg" />
                 </div>
                 <p>
                     <span className="bg-blue-100 font-medium text-black">Focusing on gratitude, consuming dark chocolate & living in the moment</span> can significantly reduce stress & improve heart health. Remember, comparison is the thief of joy.</p>
@@ -133,7 +133,7 @@ export const blogSections = [
                     <span className="bg-blue-100 font-medium text-black">Jogging offers a steady, moderate-intensity workout that strengthens the heart & improves circulation</span>. Adding short sprints increases heart rate through high-intensity intervals. Long-distance running enhances endurance & overall heart health by expanding the heart's capacity to pump blood.</p>
 
                 <div className="flex flex-row  justify-center items-center my-6">
-                    <img src={running} width="60" height="60" className="shadow-neon-blue inline align-middle my-4 mx-8 rounded-lg" />
+                    <img src={running} width="60" height="60" className="shadow-neon-blue dark:bg-slate-300 inline align-middle my-4 mx-8 rounded-lg" />
                 </div>
 
                 <p>
@@ -144,9 +144,9 @@ export const blogSections = [
                     <span className="bg-blue-100 font-medium text-black">Jump rope, swimming & hiking are excellent for improving cardiovascular health</span>. Jump rope offers a high-intensity workout that elevates the heart rate & enhances coordination, while swimming provides a full-body workout that builds endurance + lung capacity with minimal impact on joints.</p>
 
                 <div className="flex flex-row  justify-center items-center my-6">
-                    <img src={jumprope} width="60" height="60" className="shadow-neon-blue inline align-middle my-4 mx-8 rounded-lg" />
-                    <img src={swimming} width="60" height="60" className="shadow-neon-blue inline align-middle my-4 mx-8 rounded-lg" />
-                    <img src={hiking} width="60" height="60" className="shadow-neon-blue inline align-middle my-4 mx-8 rounded-lg" />
+                    <img src={jumprope} width="60" height="60" className="shadow-neon-blue dark:bg-slate-300 inline align-middle my-4 mx-8 rounded-lg" />
+                    <img src={swimming} width="60" height="60" className="shadow-neon-blue dark:bg-slate-300 inline align-middle my-4 mx-8 rounded-lg" />
+                    <img src={hiking} width="60" height="60" className="shadow-neon-blue dark:bg-slate-300 inline align-middle my-4 mx-8 rounded-lg" />
                 </div>
 
                 <p><span className="bg-red-100 font-medium text-black">Hiking, especially on varied terrain, combines aerobic exercise with strength training, promoting heart health</span>.  Together, these activities support a healthy body.</p>
@@ -156,7 +156,7 @@ export const blogSections = [
                     <span className="bg-blue-100 font-medium text-black">To maintain optimal heart health, it's best to avoid alcohol altogether</span>. If you choose to drink, avoid binge drinking, as excessive consumption leads to <span className="bg-red-100 font-medium text-black">hypertension, irregular heart rhythms, inflammation & blockage in the arteries</span>. Prioritizing moderation protects cardiovascular health.</p>
 
                 <div className="flex flex-row  justify-center items-center my-6">
-                    <img src={alcohol} width="60" height="60" className="shadow-neon-red inline align-middle my-4 mx-8 rounded-full" />
+                    <img src={alcohol} width="60" height="60" className="shadow-neon-red dark:bg-slate-300 inline align-middle my-4 mx-8 rounded-full" />
                 </div>
                 <p>
                     Alcohol, other addictive substances impact the brain, making it hard to quit. <span className="bg-blue-100 font-medium text-black">People with past issues may use alcohol to cope</span>, risking alcoholism & harm to mental, physical health. Addressing these challenges is essential for heart health.</p>
@@ -183,7 +183,7 @@ export const blogSections = [
                     <span className="bg-blue-100 font-medium text-black">Compound movements involve multiple muscle groups working together, unlike isolated exercises</span>. Like (bench press, deadlift & squat). Powerlifters perform these to maintain strength & lift heavy. Compound movements build muscle & overall strength. Focus on strength & a solid frame first, then refine with isolated exercises.</p>
 
                 <div className="flex flex-row  justify-center items-center my-6">
-                    <img src={powerlifting} width="60" height="60" className="shadow-neon-blue inline align-middle my-4 mx-8 rounded-lg" />
+                    <img src={powerlifting} width="60" height="60" className="shadow-neon-blue dark:bg-slate-300 inline align-middle my-4 mx-8 rounded-lg" />
                 </div>
                 <p>
                     <span className="bg-blue-100 font-medium text-black">Good form, strength are essential, with compound movements being key</span>. They build a solid fitness foundation, as endorsed by bodybuilders like Chris Bumstead.</p>
@@ -193,8 +193,8 @@ export const blogSections = [
                     After building strength, focus on hypertrophy with time under tension (TUT) training. In both isolated, compound exercises, use weights at 50-60% of your maximum capacity, <span className="bg-blue-100 font-medium text-black"> hold the weight for 1-2 seconds during the concentric phase</span> (when the muscle shortens as it contracts) & <span className="bg-blue-100 font-medium text-black">lower it slowly during the eccentric phase</span> (when the muscle lengthens under tension) to maximize muscle growth.</p>
 
                 <div className="flex flex-row  justify-center items-center my-6">
-                    <img src={bicepcurlone} width="60" height="60" className="shadow-neon-blue inline align-middle my-4 mx-8 rounded-lg" />
-                    <img src={bicepcurltwo} width="60" height="60" className="shadow-neon-blue inline align-middle my-4 mx-8 rounded-lg" />
+                    <img src={bicepcurlone} width="60" height="60" className="shadow-neon-blue dark:bg-slate-300 inline align-middle my-4 mx-8 rounded-lg" />
+                    <img src={bicepcurltwo} width="60" height="60" className="shadow-neon-blue dark:bg-slate-300 inline align-middle my-4 mx-8 rounded-lg" />
                 </div>
                 <p>
                     The images demonstrate bicep exercises: the <span className="bg-blue-100 font-medium text-black">first shows the concentric movement</span> (lifting with resistance bands, can also be done with dumbbells, EZ bar, etc.) & the <span className="bg-blue-100 font-medium text-black">second illustrates the eccentric movement</span> (lowering). This time under tension principle applies to all muscle exercises.</p>
@@ -204,7 +204,7 @@ export const blogSections = [
                     Proper form is crucial in training to reduce injury risk. To ensure optimal form, consider having a knowledgeable partner spot & provide feedback or record your sessions for self-analysis.</p>
 
                 <div className="flex flex-row  justify-center items-center my-6">
-                    <img src={perfectform} width="60" height="60" className="shadow-neon-blue inline align-middle my-4 mx-8 rounded-lg" />
+                    <img src={perfectform} width="60" height="60" className="shadow-neon-blue dark:bg-slate-300 inline align-middle my-4 mx-8 rounded-lg" />
                 </div>
 
                 <p>
@@ -216,7 +216,7 @@ export const blogSections = [
 
                 <div className="flex flex-row  justify-center items-center my-6">
 
-                    <img src={injury} width="60" height="60" className="shadow-neon-red inline align-middle my-4 mx-8 rounded-lg" />
+                    <img src={injury} width="60" height="60" className="shadow-neon-red dark:bg-slate-300 inline align-middle my-4 mx-8 rounded-lg" />
 
                 </div>
 
@@ -229,7 +229,7 @@ export const blogSections = [
 
 
                 <div className="flex flex-row  justify-center items-center my-6">
-                    <img src={thirtymin} width="60" height="60" className="shadow-neon-blue inline align-middle my-4 mx-8 rounded-full" />
+                    <img src={thirtymin} width="60" height="60" className="shadow-neon-blue dark:bg-slate-300 inline align-middle my-4 mx-8 rounded-full" />
 
                 </div>
 
@@ -241,7 +241,7 @@ export const blogSections = [
                     To overcome plateaus and ensure steady progress, <span className="bg-blue-100 font-medium text-black">maintain high training intensity with reduced volume</span>, a method suggested by bodybuilder Mike Mentzer to break through stagnation. Add training variations to keep your routine engaging. For instance, <span className="bg-blue-100 font-medium text-black">If you usually do 4 sets, cut it down to 2, but give your maximum effort</span> in those remaining sets.</p>
 
                 <div className="flex flex-row  justify-center items-center my-6">
-                    <img src={varietyintraining} width="60" height="60" className="shadow-neon-blue inline align-middle my-4 mx-8 rounded-lg" />
+                    <img src={varietyintraining} width="60" height="60" className="shadow-neon-blue dark:bg-slate-300 inline align-middle my-4 mx-8 rounded-lg" />
                 </div>
 
                 <p>
@@ -252,7 +252,7 @@ export const blogSections = [
                     For optimal hypertrophy, use <span className="bg-blue-100 font-medium text-black">heavy weights with lower reps to build strength, size</span> & <span className="bg-blue-100 font-medium text-black">lighter weights with higher reps to enhance endurance</span>, promote growth. This approach targets different muscle fibers Type II for strength and Type I for endurance, while boosting key hormones like testosterone & growth hormone.</p>
 
                 <div className="flex flex-row  justify-center items-center my-6">
-                    <img src={heavylightbalance} width="60" height="60" className="shadow-neon-blue inline align-middle my-4 mx-8 rounded-lg" />
+                    <img src={heavylightbalance} width="60" height="60" className="shadow-neon-blue dark:bg-slate-300 inline align-middle my-4 mx-8 rounded-lg" />
                 </div>
 
                 <p>
@@ -264,8 +264,8 @@ export const blogSections = [
 
                 <div className="flex flex-row  justify-center items-center my-6">
 
-                    <img src={stretching} width="60" height="60" className="shadow-neon-blue inline align-middle my-4 mx-8 rounded-lg" />
-                    <img src={yoga} width="60" height="60" className="shadow-neon-blue inline align-middle my-4 mx-8 rounded-lg" />
+                    <img src={stretching} width="60" height="60" className="shadow-neon-blue dark:bg-slate-300 inline align-middle my-4 mx-8 rounded-lg" />
+                    <img src={yoga} width="60" height="60" className="shadow-neon-blue dark:bg-slate-300 inline align-middle my-4 mx-8 rounded-lg" />
 
                 </div>
 
@@ -296,7 +296,7 @@ export const blogSections = [
 
                 <div className="flex flex-row  justify-center items-center my-6">
 
-                    <img src={crunches} width="60" height="60" className="shadow-neon-blue inline align-middle my-4 mx-8 rounded-lg" />
+                    <img src={crunches} width="60" height="60" className="shadow-neon-blue dark:bg-slate-300 inline align-middle my-4 mx-8 rounded-lg" />
 
                 </div>
                 <p>
@@ -309,8 +309,8 @@ export const blogSections = [
 
                 <div className="flex flex-row  justify-center items-center my-6">
 
-                    <img src={liftingboxes} width="60" height="60" className="shadow-neon-blue inline align-middle my-4 mx-8 rounded-lg" />
-                    <img src={martialarts} width="60" height="60" className="shadow-neon-blue inline align-middle my-4 mx-8 rounded-lg" />
+                    <img src={liftingboxes} width="60" height="60" className="shadow-neon-blue dark:bg-slate-300 inline align-middle my-4 mx-8 rounded-lg" />
+                    <img src={martialarts} width="60" height="60" className="shadow-neon-blue dark:bg-slate-300 inline align-middle my-4 mx-8 rounded-lg" />
 
                 </div>
                 <p>
@@ -323,8 +323,8 @@ export const blogSections = [
 
                 <div className="flex flex-row  justify-center items-center my-6">
 
-                    <img src={pushups} width="60" height="60" className="shadow-neon-blue inline align-middle my-4 mx-8 rounded-lg" />
-                    <img src={pullups} width="60" height="60" className="shadow-neon-blue inline align-middle my-4 mx-8 rounded-lg" />
+                    <img src={pushups} width="60" height="60" className="shadow-neon-blue dark:bg-slate-300 inline align-middle my-4 mx-8 rounded-lg" />
+                    <img src={pullups} width="60" height="60" className="shadow-neon-blue dark:bg-slate-300 inline align-middle my-4 mx-8 rounded-lg" />
 
                 </div>
 
@@ -338,9 +338,9 @@ export const blogSections = [
 
                 <div className="flex flex-row  justify-center items-center my-6">
 
-                    <img src={barbellsquat} width="60" height="60" className="shadow-neon-blue inline align-middle my-4 mx-8 rounded-lg" />
-                    <img src={lunges} width="60" height="60" className="shadow-neon-blue inline align-middle my-4 mx-8 rounded-lg" />
-                    <img src={pistolsquats} width="60" height="60" className="shadow-neon-blue inline align-middle my-4 mx-8 rounded-lg" />
+                    <img src={barbellsquat} width="60" height="60" className="shadow-neon-blue dark:bg-slate-300 inline align-middle my-4 mx-8 rounded-lg" />
+                    <img src={lunges} width="60" height="60" className="shadow-neon-blue dark:bg-slate-300 inline align-middle my-4 mx-8 rounded-lg" />
+                    <img src={pistolsquats} width="60" height="60" className="shadow-neon-blue dark:bg-slate-300 inline align-middle my-4 mx-8 rounded-lg" />
 
                 </div>
                 <p>
@@ -352,7 +352,7 @@ export const blogSections = [
 
                 <div className="flex flex-row  justify-center items-center my-6" >
 
-                    <img src={elbowpain} width="60" height="60" className="shadow-neon-red inline align-middle my-4 mx-8 rounded-lg" />
+                    <img src={elbowpain} width="60" height="60" className="shadow-neon-red dark:bg-slate-300 inline align-middle my-4 mx-8 rounded-lg" />
 
                 </div>
                 <p>
@@ -365,7 +365,7 @@ export const blogSections = [
 
                 <div className="flex flex-row  justify-center items-center my-6" >
 
-                    <img src={burpees} width="70" height="70" className="shadow-neon-blue inline align-middle my-4 mx-8 rounded-md" />
+                    <img src={burpees} width="70" height="70" className="shadow-neon-blue dark:bg-slate-300 inline align-middle my-4 mx-8 rounded-md" />
 
                 </div>
                 <p>
@@ -378,7 +378,7 @@ export const blogSections = [
 
                 <div className="flex flex-row  justify-center items-center my-6" >
 
-                    <img src={variety} width="60" height="60" className="shadow-neon-blue inline align-middle my-4 mx-8 rounded-md" />
+                    <img src={variety} width="60" height="60" className="shadow-neon-blue dark:bg-slate-300 inline align-middle my-4 mx-8 rounded-md" />
 
                 </div>
 
@@ -393,8 +393,8 @@ export const blogSections = [
 
                 <div className="flex flex-row  justify-center items-center my-6" >
 
-                    <img src={gymnastring} width="60" height="60" className="shadow-neon-blue inline align-middle my-4 mx-8 rounded-md" />
-                    <img src={dips} width="60" height="60" className="shadow-neon-blue inline align-middle my-4 mx-8 rounded-md" />
+                    <img src={gymnastring} width="60" height="60" className="shadow-neon-blue dark:bg-slate-300 inline align-middle my-4 mx-8 rounded-md" />
+                    <img src={dips} width="60" height="60" className="shadow-neon-blue dark:bg-slate-300 inline align-middle my-4 mx-8 rounded-md" />
 
                 </div>
 

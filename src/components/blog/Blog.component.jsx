@@ -15,7 +15,7 @@ function Blog() {
     };
 
     return (
-        <section className="text-gray-600 dark:text-white body-font overflow-hidden dark:md:bg-gradient-to-b dark:from-gray-800 dark:via-slate-700 dark:to-gray-800 md:bg-gradient-to-b from-white to-blue-50 rounded-lg">
+        <section className="text-gray-600 dark:text-white body-font overflow-hidden dark:md:bg-gradient-to-t dark:from-slate-800 dark:to-gray-800 md:bg-gradient-to-b from-white to-blue-50 rounded-lg">
             <div className="container px-5 py-12 md:py-24 mx-auto">
                 <div className="-my-8 divide-y-2 divide-blue-400">
                     {blogSections.map((section, sectionIndex) => (
@@ -31,11 +31,11 @@ function Blog() {
                                         ${selectedPointIndices[sectionIndex] === pointIndex ? 'font-medium bg-blue-100 dark:bg-blue-500' : ''}`}
                                         onClick={() => handlePointClick(sectionIndex, pointIndex)}
                                     >
-                                        <span className="text-blue-500 mr-2">{pointIndex + 1}.</span> {point.text}
+                                        <span className="text-blue-500 dark:text-white mr-2">{pointIndex + 1}.</span> {point.text}
                                     </span>
                                 ))}
                             </div>
-                            <div className="md:flex-grow dark:bg-slate-500 dark:px-2 dark:py-2 dark:rounded-lg">
+                            <div className="md:flex-grow ">
                                 <h2 className="text-2xl font-medium text-gray-900 dark:text-white title-font mb-4 md:mb-14">
                                     {section.points[selectedPointIndices[sectionIndex]].text}
                                 </h2>

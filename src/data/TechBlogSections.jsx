@@ -50,7 +50,7 @@ export const TechBlogSections = [
                     Real-time health tracking can be done with wearables like the Apple Watch or fitness bands. <span className="bg-blue-100 text-black font-medium">These devices monitor key metrics such as heart rate, sleep quality, activity levels & blood oxygen levels</span>. They use advanced sensors to provide accurate readings & allow users to set personalized fitness goals. Features like ECG monitoring and blood pressure tracking give deeper insights into heart health.</p>
 
                 <div className="flex flex-row justify-center items-center my-6">
-                    <img src={applewatch} width="60" height="60" className="shadow-neon-blue inline align-middle my-4 mx-8 rounded-lg" />
+                    <img src={applewatch} width="60" height="60" className="shadow-neon-blue dark:bg-slate-300 inline align-middle my-4 mx-8 rounded-lg" />
                 </div>
 
                 <p>
@@ -61,7 +61,7 @@ export const TechBlogSections = [
                     <span className="bg-blue-100 text-black font-medium">Smart scales do more than measure weight, they provide a detailed body analysis using bioelectrical impedance analysis (BIA)</span>. When you step on the scale, it sends a small electrical current through your body to measure metrics like body fat percentage, muscle mass & water composition.</p>
 
                 <div className="flex flex-row justify-center items-center my-6">
-                    <img src={smartscale} width="60" height="60" className="shadow-neon-blue inline align-middle my-4 mx-8 rounded-lg" />
+                    <img src={smartscale} width="60" height="60" className="shadow-neon-blue dark:bg-slate-300 inline align-middle my-4 mx-8 rounded-lg" />
                 </div>
 
                 <p>
@@ -72,8 +72,8 @@ export const TechBlogSections = [
                     <span className="bg-blue-100 text-black font-medium">Fitness apps like MyFitnessPal and Fitbod provide personalized workout & diet plans</span>, offering tailored guidance & real-time adjustments. Start by entering accurate data & setting clear goals to maximize their effectiveness. <span className="bg-blue-100 text-black font-medium">Regularly update your progress to ensure the plans adapt to your fitness levels.</span></p>
 
                 <div className="flex flex-row justify-center items-center my-6">
-                    <img src={workoutapp} width="60" height="60" className="shadow-neon-blue inline align-middle my-4 mx-8 rounded-lg" />
-                    <img src={dietapp} width="60" height="60" className="shadow-neon-blue inline align-middle my-4 mx-8 rounded-lg" />
+                    <img src={workoutapp} width="60" height="60" className="shadow-neon-blue dark:bg-slate-300 inline align-middle my-4 mx-8 rounded-lg" />
+                    <img src={dietapp} width="60" height="60" className="shadow-neon-blue dark:bg-slate-300 inline align-middle my-4 mx-8 rounded-lg" />
                 </div>
 
                 <p>
@@ -84,7 +84,7 @@ export const TechBlogSections = [
                     AI-powered reminders are smart notifications that help you stay on track with your fitness goals. <span className="bg-blue-100 text-black font-medium">These reminders use artificial intelligence to learn your habits and preferences, sending personalized alerts for activities like exercise, hydration or breaks</span>. Apps like MyFitnessPal, Habitica can remind you to log meals or complete workouts, while others can send texts via WhatsApp for added motivation.</p>
 
                 <div className="flex flex-row justify-center items-center my-6">
-                    <img src={aireminder} width="60" height="60" className="shadow-neon-blue inline align-middle my-4 mx-8 rounded-lg" />
+                    <img src={aireminder} width="60" height="60" className="shadow-neon-blue dark:bg-slate-300 inline align-middle my-4 mx-8 rounded-lg" />
                 </div>
 
                 <p>
@@ -96,7 +96,7 @@ export const TechBlogSections = [
                     <span className="bg-blue-100 text-black font-medium">Recipe apps like Yummly and Paprika optimize your fitness by offering personalized meal recommendations for dietary goals</span>, like high protein or low-carb diets. Paprika includes features for meal planning, nutritional analysis & grocery lists, helping you stay on track with your diet.</p>.
 
                 <div className="flex flex-row justify-center items-center my-6">
-                    <img src={receipeapp} width="60" height="60" className="shadow-neon-blue inline align-middle my-4 mx-8 rounded-lg" />
+                    <img src={receipeapp} width="60" height="60" className="shadow-neon-blue dark:bg-slate-300 inline align-middle my-4 mx-8 rounded-lg" />
                 </div>
                 <p>
                     By leveraging these tools, you can efficiently plan and prepare meals that align with your fitness objectives, making it easier to maintain a balanced diet.</p>
@@ -106,7 +106,7 @@ export const TechBlogSections = [
                     Virtual AI coaching, from <span className="bg-blue-100 text-black font-medium">apps like Freeletics and Vi Trainer, offers personalized fitness guidance</span> by analyzing wearables data & adjusting recommendations. These apps provide customized workouts & track progress.</p>
 
                 <div className="flex flex-row justify-center items-center my-6">
-                    <img src={virtualcoaching} width="60" height="60" className="shadow-neon-blue inline align-middle my-4 mx-8 rounded-lg" />
+                    <img src={virtualcoaching} width="60" height="60" className="shadow-neon-blue dark:bg-slate-300 inline align-middle my-4 mx-8 rounded-lg" />
                 </div>
 
                 <p>
@@ -117,8 +117,8 @@ export const TechBlogSections = [
                     <span className="bg-blue-100 text-black font-medium">Smart home technology enhances fitness with real-time feedback through devices like Smart Mirrors & Peloton Bikes</span>. These tools can be costly but are particularly beneficial for those with specific challenges like limited mobility or medical conditions.</p>
 
                 <div className="flex flex-row justify-center items-center my-6">
-                    <img src={smartmirror} width="60" height="60" className="shadow-neon-blue inline align-middle my-4 mx-8 rounded-lg" />
-                    <img src={peletonbike} width="60" height="60" className="shadow-neon-blue inline align-middle my-4 mx-8 rounded-lg" />
+                    <img src={smartmirror} width="60" height="60" className="shadow-neon-blue dark:bg-slate-300 inline align-middle my-4 mx-8 rounded-lg" />
+                    <img src={peletonbike} width="60" height="60" className="shadow-neon-blue dark:bg-slate-300 inline align-middle my-4 mx-8 rounded-lg" />
                 </div>
 
                 <p>
@@ -130,7 +130,7 @@ export const TechBlogSections = [
                     <span className="bg-blue-100 text-black font-medium">Interactive health communities</span> connect users with experts and peers through platforms like <span className="bg-blue-100 text-black font-medium">Reddit’s r/Fitness, MyFitnessPal forums, Fitbit Community & our LockTechFitness Discord server</span>.</p>
 
                 <div className="flex flex-row justify-center items-center my-6">
-                    <img src={healthcommunity} width="60" height="60" className="shadow-neon-blue inline align-middle my-4 mx-8 rounded-lg" />
+                    <img src={healthcommunity} width="60" height="60" className="shadow-neon-blue dark:bg-slate-300 inline align-middle my-4 mx-8 rounded-lg" />
                 </div>
 
                 <p>
@@ -161,7 +161,7 @@ export const TechBlogSections = [
 
 
                 <div className="flex flex-row justify-center items-center my-6">
-                    <img src={massagegunwave} width="60" height="60" className="shadow-neon-blue inline align-middle my-4 mx-8 rounded-lg" />
+                    <img src={massagegunwave} width="60" height="60" className="shadow-neon-blue dark:bg-slate-300 inline align-middle my-4 mx-8 rounded-lg" />
                 </div>
 
                 <p>
@@ -173,7 +173,7 @@ export const TechBlogSections = [
                     For optimal percussive therapy, use <span className="bg-blue-100 text-black font-medium">massage guns (e.g., Theragun Elite)</span> for deep muscle relief, <span className="bg-blue-100 text-black font-medium">massage chairs (e.g., OSIM uInfinity)</span> for full-body relaxation, <span className="bg-blue-100 text-black font-medium">handheld massagers (e.g., Breo iNeck2)</span> for targeted areas & <span className="bg-blue-100 text-black font-medium">foot massagers (e.g., Miko Shiatsu)</span> for lower body recovery.</p>
 
                 <div className="flex flex-row justify-center items-center my-6">
-                    <img src={percussivetherapy} width="60" height="60" className="shadow-neon-blue inline align-middle my-4 mx-8 rounded-lg" />
+                    <img src={percussivetherapy} width="60" height="60" className="shadow-neon-blue dark:bg-slate-300 inline align-middle my-4 mx-8 rounded-lg" />
                 </div>
 
                 <p>
@@ -184,7 +184,7 @@ export const TechBlogSections = [
                     <span className="bg-blue-100 text-black font-medium">Using a full-body massager like a massage chair, post-workout can effectively reduce muscle soreness</span> by improving blood circulation and accelerating recovery. These tools are especially <span className="bg-blue-100 text-black font-medium">beneficial in preventing delayed onset muscle soreness (DOMS)</span>, often occurs from training involving eccentric movements due to the lengthening of muscles.</p>
 
                 <div className="flex flex-row justify-center items-center my-6">
-                    <img src={vibratechair} width="60" height="60" className="shadow-neon-blue inline align-middle my-4 mx-8 rounded-lg" />
+                    <img src={vibratechair} width="60" height="60" className="shadow-neon-blue dark:bg-slate-300 inline align-middle my-4 mx-8 rounded-lg" />
                 </div>
 
                 <p> Incorporating a massager into your routine enhances blood flow & muscle recovery, making it an essential part of post-workout rituals.</p>
@@ -194,7 +194,7 @@ export const TechBlogSections = [
                     Targeted relief with massagers or massage guns is crucial for injury prevention.<span className="bg-blue-100 text-black font-medium">Focus on specific muscles for 1-2 minutes each</span> to relieve tension, improve blood circulation & correct imbalances <span className="bg-red-100 text-black font-medium">while avoiding joints, bones to prevent pain and injury.</span></p>
 
                 <div className="flex flex-row justify-center items-center my-6">
-                    <img src={bloodcirculation} width="60" height="60" className="shadow-neon-red inline align-middle my-4 mx-8 rounded-full" />
+                    <img src={bloodcirculation} width="60" height="60" className="shadow-neon-red dark:bg-slate-300 inline align-middle my-4 mx-8 rounded-full" />
                 </div>
 
                 <p>
@@ -205,7 +205,7 @@ export const TechBlogSections = [
                     <span className="bg-blue-100 text-black font-medium">Dolphin massagers are excellent for fitness & recovery, especially for larger muscle groups</span>. Their shock waves/vibrations penetrate deep into tissues, boosting blood flow and easing muscle tension. For best results, <span className="bg-blue-100 text-black font-medium">use the massager on specific areas for 1-2 minutes each</span>, targeting major muscles like the back, quads & hamstrings.</p>
 
                 <div className="flex flex-row justify-center items-center my-6">
-                    <img src={dolhpin} width="60" height="60" className="shadow-neon-blue inline align-middle my-4 mx-8 rounded-lg" />
+                    <img src={dolhpin} width="60" height="60" className="shadow-neon-blue dark:bg-slate-300 inline align-middle my-4 mx-8 rounded-lg" />
                 </div>
 
                 <p>
@@ -216,8 +216,8 @@ export const TechBlogSections = [
                     <span className="bg-blue-100 text-black font-medium">Dolphin massagers</span>, with their dual ends, are effective for larger muscle groups, offering broad, deep tissue stimulation and <span className="bg-blue-100 text-black font-medium">often requiring assistance for full use</span>. In contrast, <span className="bg-blue-100 text-black font-medium">massage guns, with their single end, excel at targeting smaller, hard-to-reach areas</span> & can be used independently for precise, targeted relief.</p>
 
                 <div className="flex flex-row justify-center items-center my-6">
-                    <img src={dolphintwo} width="60" height="60" className="shadow-neon-blue inline align-middle my-4 mx-8 rounded-lg" />
-                    <img src={massageguntwo} width="60" height="60" className="shadow-neon-blue inline align-middle my-4 mx-8 rounded-lg" />
+                    <img src={dolphintwo} width="60" height="60" className="shadow-neon-blue dark:bg-slate-300 inline align-middle my-4 mx-8 rounded-lg" />
+                    <img src={massageguntwo} width="60" height="60" className="shadow-neon-blue dark:bg-slate-300 inline align-middle my-4 mx-8 rounded-lg" />
                 </div>
 
                 <p>
@@ -228,9 +228,9 @@ export const TechBlogSections = [
                     Using a hot water bath or shower followed by a massager boosts recovery by enhancing blood flow. The heat from the bath increases circulation, speeding nutrient delivery to muscles.</p>
 
                 <div className="flex flex-row justify-center items-center my-6">
-                    <img src={shower} width="60" height="60" className="shadow-neon-blue inline align-middle my-4 mx-8 rounded-lg" />
-                    <img src={bath} width="60" height="60" className="shadow-neon-blue inline align-middle my-4 mx-8 rounded-lg" />
-                    <img src={differentmassager} width="60" height="60" className="shadow-neon-blue inline align-middle my-4 mx-8 rounded-lg" />
+                    <img src={shower} width="60" height="60" className="shadow-neon-blue dark:bg-slate-300 inline align-middle my-4 mx-8 rounded-lg" />
+                    <img src={bath} width="60" height="60" className="shadow-neon-blue dark:bg-slate-300 inline align-middle my-4 mx-8 rounded-lg" />
+                    <img src={differentmassager} width="60" height="60" className="shadow-neon-blue dark:bg-slate-300 inline align-middle my-4 mx-8 rounded-lg" />
                 </div>
 
                 <p>
@@ -243,7 +243,7 @@ export const TechBlogSections = [
 
 
                 <div className="flex flex-row justify-center items-center my-6">
-                    <img src={heavy} width="60" height="60" className="shadow-neon-blue inline align-middle my-4 mx-8 rounded-lg" />
+                    <img src={heavy} width="60" height="60" className="shadow-neon-blue dark:bg-slate-300 inline align-middle my-4 mx-8 rounded-lg" />
                 </div>
 
                 <p>
@@ -273,7 +273,7 @@ export const TechBlogSections = [
                 </p>
 
                 <div className="flex flex-row justify-center items-center my-6">
-                    <img src={immersivework} width="60" height="60" className="shadow-neon-blue inline align-middle my-4 mx-8 rounded-lg" />
+                    <img src={immersivework} width="60" height="60" className="shadow-neon-blue dark:bg-slate-300 inline align-middle my-4 mx-8 rounded-lg" />
                 </div>
 
                 <p>
@@ -287,7 +287,7 @@ export const TechBlogSections = [
                     Gamified VR fitness experiences, like <span className="bg-blue-100 text-black font-medium">"Thrill of the Fight" and "FitXR", turn workouts into fun, interactive games</span> with challenges and rewards.</p>
 
                 <div className="flex flex-row justify-center items-center my-6">
-                    <img src={gamified} width="60" height="60" className="shadow-neon-blue inline align-middle my-4 mx-8 rounded-lg" />
+                    <img src={gamified} width="60" height="60" className="shadow-neon-blue dark:bg-slate-300 inline align-middle my-4 mx-8 rounded-lg" />
                 </div>
 
                 <p>
@@ -298,7 +298,7 @@ export const TechBlogSections = [
                     <span className="bg-blue-100 text-black font-medium">VR boxing games like "Thrill of the Fight" and "BOXVR" sharpen reflexes and boost fitness with intense simulations</span>.</p>
 
                 <div className="flex flex-row justify-center items-center my-6">
-                    <img src={vrboxing} width="60" height="60" className="shadow-neon-blue inline align-middle my-4 mx-8 rounded-lg" />
+                    <img src={vrboxing} width="60" height="60" className="shadow-neon-blue dark:bg-slate-300 inline align-middle my-4 mx-8 rounded-lg" />
                 </div>
 
                 <p>
@@ -309,7 +309,7 @@ export const TechBlogSections = [
                     VR fitness provides instant feedback on form with real-time corrections and tips.<span className="bg-blue-100 text-black font-medium"> Apps like "BoxVR" & "VZfit" use sensors to monitor your movements and offer immediate adjustments for proper technique</span>.</p>
 
                 <div className="flex flex-row justify-center items-center my-6">
-                    <img src={instantfeedback} width="60" height="60" className="shadow-neon-blue inline align-middle my-4 mx-8 rounded-lg" />
+                    <img src={instantfeedback} width="60" height="60" className="shadow-neon-blue dark:bg-slate-300 inline align-middle my-4 mx-8 rounded-lg" />
                 </div>
 
 
@@ -321,7 +321,7 @@ export const TechBlogSections = [
                     VR fitness builds community through <span className="bg-blue-100 text-black font-medium">immersive classes like "Meta Quest", "FitXR" and "Luxor" with real-time guidance & peer interaction</span>. Platforms like YUR & Black Box VR offer motivation through tips and challenges, while subreddits like r/vrfit and r/Oculus, along with Discord <span className="bg-blue-100 text-black font-medium">communities like YUR Discord, provide discussion & weekly contests</span>.</p>
 
                 <div className="flex flex-row justify-center items-center my-6">
-                    <img src={community} width="60" height="60" className="shadow-neon-blue inline align-middle my-4 mx-8 rounded-lg" />
+                    <img src={community} width="60" height="60" className="shadow-neon-blue dark:bg-slate-300 inline align-middle my-4 mx-8 rounded-lg" />
                 </div>
 
 
@@ -333,7 +333,7 @@ export const TechBlogSections = [
                     VR fitness transforms tracking with customizable avatars on platforms like FitXR, using Meta Quest headsets for a personalized experience. <span className="bg-blue-100 text-black font-medium">Advanced VR hardware & apps provide real-time performance feedback & integrate with the Move app, Oculus Mobile App</span> & Apple Health for seamless progress tracking across devices.</p>
 
                 <div className="flex flex-row justify-center items-center my-6">
-                    <img src={avatar} width="60" height="60" className="shadow-neon-blue inline align-middle my-4 mx-8 rounded-full" />
+                    <img src={avatar} width="60" height="60" className="shadow-neon-blue dark:bg-slate-300 inline align-middle my-4 mx-8 rounded-full" />
                 </div>
 
                 <p>
@@ -344,7 +344,7 @@ export const TechBlogSections = [
                     Sharing achievements socially in VR fitness boosts motivation and community engagement. <span className="bg-blue-100 text-black font-medium">Platforms like FitXR & Meta Quest enable users to post milestones & progress updates to social media</span>, celebrating success and inspiring others.</p>
 
                 <div className="flex flex-row justify-center items-center my-6">
-                    <img src={socialachievement} width="60" height="60" className="shadow-neon-blue inline align-middle my-4 mx-8 rounded-lg" />
+                    <img src={socialachievement} width="60" height="60" className="shadow-neon-blue dark:bg-slate-300 inline align-middle my-4 mx-8 rounded-lg" />
                 </div>
 
                 <p>
@@ -356,7 +356,7 @@ export const TechBlogSections = [
                     <span className="bg-blue-100 text-black font-medium">VR fitness</span> is primarily cardio-focused, <span className="bg-blue-100 text-black font-medium">offering immersive experiences like virtual running, cycling & boxing</span> that enhance cardiovascular health. Current platforms emphasize high-intensity, heart-pumping workouts.</p>
 
                 <div className="flex flex-row justify-center items-center my-6">
-                    <img src={cardio} width="60" height="60" className="shadow-neon-blue inline align-middle my-4 mx-8 rounded-lg" />
+                    <img src={cardio} width="60" height="60" className="shadow-neon-blue dark:bg-slate-300 inline align-middle my-4 mx-8 rounded-lg" />
                 </div>
 
                 <p>
