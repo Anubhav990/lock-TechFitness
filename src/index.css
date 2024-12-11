@@ -7,3 +7,7 @@
 body {
     @apply font-robotoC;
 }
+
+body.dark {
+    @apply bg-gray-800;
+}

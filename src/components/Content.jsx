@@ -98,17 +98,17 @@ function Content({
     ];
 
     return (
-        <section className="text-gray-900 md:text-gray-600 body-font bg-white md:bg-gradient-to-b md:from-white md:via-blue-50 md:to-blue-100 rounded-lg">
+        <section className="text-gray-900 md:text-gray-600 body-font bg-white dark:bg-gray-800 md:bg-gradient-to-b md:from-white md:via-blue-50 md:to-blue-100 dark:md:bg-gradient-to-b dark:md:from-gray-800 dark:md:via-gray-700 dark:md:to-slate-600 rounded-lg">
             <div className="container px-5 md:pt-28 pt-16 pb-4 md:pb-16 mx-auto">
                 <div className="flex flex-wrap w-full mb-6 md:mb-20 flex-col items-center text-center">
-                    <h1 className="sm:text-3xl text-2xl font-medium title-font mb-6 md:mb-2 text-gray-900">Transform Your Body and Mind with Advanced Fitness Insights and Tech</h1>
-                    <p className="lg:w-3/4 w-full text-sm md:text-base leading-relaxed text-gray-500 font-medium">
+                    <h1 className="sm:text-3xl text-2xl font-medium title-font mb-6 md:mb-2 text-gray-900 dark:text-white">Transform Your Body and Mind with Advanced Fitness Insights and Tech</h1>
+                    <p className="lg:w-3/4 w-full text-sm md:text-base leading-relaxed text-gray-500 dark:text-gray-300 font-medium">
                         Learn key fitness tips in the categories below to improve your health &  performance.</p>
                 </div>
                 <div className="flex flex-wrap -m-4">
                     {cards.map(({ id, iconSrc, iconAlt, title, description, background }) => (
                         <div key={id} className="xl:w-1/3 md:w-1/2 p-4 hover:scale-110 transition-all duration-75 ease-in rounded-lg cursor-pointer group relative">
-                            <div className="border border-indigo-100 p-6 rounded-lg bg-white shadow-lg shadow-gray-400 relative overflow-hidden">
+                            <div className="border border-indigo-100 p-6 rounded-lg bg-white dark:bg-gray-800 shadow-lg shadow-gray-400 dark:shadow-neon-blue-two relative overflow-hidden">
                                 <div className={`absolute inset-0 ${background} bg-no-repeat bg-cover bg-center opacity-30 group-hover:opacity-40 md:opacity-0 transition-opacity duration-300`}></div>
 
                                 <div className="relative z-10">
@@ -120,8 +120,8 @@ function Content({
                                             height="30"
                                         />
                                     </div>
-                                    <h2 className="text-lg text-gray-900 font-medium title-font mb-2">{title}</h2>
-                                    <p className="leading-relaxed font-medium group-hover:text-black transition-colors duration-300 text-base">{description}</p>
+                                    <h2 className="text-lg text-gray-900 dark:text-white font-medium title-font mb-2">{title}</h2>
+                                    <p className="leading-relaxed font-medium dark:text-white group-hover:text-black dark:group-hover:text-white transition-colors duration-300 text-base">{description}</p>
                                 </div>
                             </div>
                         </div>
@@ -129,17 +129,17 @@ function Content({
                 </div>
                 {session ? (
                     <button
-                        className="flex mx-auto mt-16 text-white text-xl bg-indigo-500 md:bg-black border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 transition-all duration-75 ease-in rounded-lg shadow-md hover:shadow-lg transform hover:scale-105"
+                        className="flex mx-auto mt-16 text-white text-xl bg-indigo-500 md:bg-black dark:bg-sky-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 transition-all duration-75 ease-in rounded-lg shadow-md hover:shadow-lg transform hover:scale-105"
                         onClick={handleExploreClick}
                     >
                         Explore Now!
                     </button>
                 ) : (
-                    <div className="flex flex-col items-center mt-8 md:mt-12 bg-blue-100 md:bg-transparent rounded-2xl p-4">
-                        <p className="mb-4 text-gray-800">Sign up for Free to Access Premium Fitness Insights!</p>
+                    <div className="flex flex-col items-center mt-8 md:mt-12 bg-blue-100 dark:bg-slate-500 md:bg-transparent md:dark:bg-transparent rounded-2xl p-4">
+                        <p className="mb-4 text-gray-800 dark:text-white">Sign up for Free to Access Premium Fitness Insights!</p>
                         <div className="flex space-x-4">
                             <button
-                                className="text-white text-lg bg-black border-0 py-2 px-8 focus:outline-none hover:bg-indigo-500 transition-all duration-75 ease-in rounded-lg shadow-md hover:shadow-lg transform hover:scale-105"
+                                className="text-white text-lg bg-black dark:bg-sky-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-500 transition-all duration-75 ease-in rounded-lg shadow-md hover:shadow-lg transform hover:scale-105"
                                 onClick={() => navigate('/SignUp')}
                             >
                                 Explore

@@ -6,9 +6,30 @@ import Modal from '../../components/logoutmodal/Modal.component';
 
 function Header({ logoName = "Lock-Tech Fitness", logoSrc = mainlogo, logoAlt = "LockTechFitness", btnText1 = "Sign Up", btnText2 = "Log In", btnText3 = "Log Out", onLogOutClick }) {
 
+    const moonIcon = '/moon.svg'; // Reference directly from the public directory
+    const sunIcon = '/sun.svg';
     const [user, setUser] = useState(null);
     const [showModal, setShowModal] = useState(false);
     const [menuOpen, setMenuOpen] = useState(false); // State for mobile menu
+    const [darkMode, setIsDarkMode] = useState(false);
+
+      // Check localStorage on mount and set the darkMode state
+      useEffect(() => {
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'dark') {
+            setIsDarkMode(true);
+        }
+    }, []);
+
+    useEffect(() => {
+        if (darkMode) {
+            document.body.classList.add('dark');
+            localStorage.setItem('theme', 'dark'); // Save dark mode preference
+        } else {
+            document.body.classList.remove('dark');
+            localStorage.setItem('theme', 'light'); // Save light mode preference
+        }
+    }, [darkMode]);
 
     useEffect(() => {
         const { data: authListener } = supabase.auth.onAuthStateChange((event, session) => {
@@ -21,6 +42,11 @@ function Header({ logoName = "Lock-Tech Fitness", logoSrc = mainlogo, logoAlt = 
         };
     }, []);
 
+    const toggleDarkMode = () => {
+        setIsDarkMode(!darkMode);
+    }
+
+
     const handleLogOut = async () => {
         await supabase.auth.signOut();
         setShowModal(false);
@@ -32,7 +58,7 @@ function Header({ logoName = "Lock-Tech Fitness", logoSrc = mainlogo, logoAlt = 
 
     return (
         <>
-            <div className="relative w-full md:bg-white bg-blue-100 rounded font-robotoC">
+            <div className="relative w-full md:bg-white bg-blue-100 dark:bg-gray-800 rounded font-robotoC">
                 <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-2 sm:px-6 lg:px-8">
                     <div className="inline-flex items-center space-x-2">
                         <span>
@@ -44,7 +70,7 @@ function Header({ logoName = "Lock-Tech Fitness", logoSrc = mainlogo, logoAlt = 
                             />
                         </span>
                         <NavLink to="/">
-                        <span className="font-bold">{logoName}</span>
+                        <span className="font-bold text-black dark:text-white">{logoName}</span>
                         </NavLink>
                     </div>
                     <div className="hidden grow items-start lg:flex">
@@ -52,7 +78,7 @@ function Header({ logoName = "Lock-Tech Fitness", logoSrc = mainlogo, logoAlt = 
                             <li>
                                 <NavLink
                                     to="/"
-                                    className={({ isActive }) => `inline-flex items-center text-sm font-semibold ${isActive ? "text-blue-500" : "text-gray-800"} hover:text-gray-900 hover:scale-110 cursor-pointer`}
+                                    className={({ isActive }) => `inline-flex items-center text-sm font-semibold ${isActive ? "text-blue-500 dark:text-blue-300 dark:border-b-2 underline-offset-4 border-blue-400" : "text-gray-800 dark:text-white"} hover:text-gray-900 dark:hover:text-blue-300 hover:scale-110 cursor-pointer`}
                                 >
                                     Home
                                 </NavLink>
@@ -60,15 +86,15 @@ function Header({ logoName = "Lock-Tech Fitness", logoSrc = mainlogo, logoAlt = 
                             <li>
                                 <NavLink
                                     to="/About"
-                                    className={({isActive}) => `inline-flex items-center text-sm font-semibold ${isActive ? "text-blue-500" : "text-gray-800"} hover:text-gray-900 hover:scale-110 cursor-pointer`}
+                                    className={({isActive}) => `inline-flex items-center text-sm font-semibold ${isActive ? "text-blue-500 dark:text-blue-300 dark:border-b-2 underline-offset-4 border-blue-400" : "text-gray-800 dark:text-white"} hover:text-gray-900 dark:hover:text-blue-300 hover:scale-110 cursor-pointer`}
                                 >
                                     About
                                 </NavLink>
                             </li>
                             <li>
                                 <NavLink
-                                    to="/FAQTwo"
-                                    className={({isActive}) => `inline-flex items-center text-sm font-semibold ${isActive ? "text-blue-500" : "text-gray-800"} hover:text-gray-900 hover:scale-110 cursor-pointer`}
+                                    to="/FAQTwo" 
+                                    className={({isActive}) => `inline-flex items-center text-sm font-semibold ${isActive ? "text-blue-500 dark:text-blue-300 dark:border-b-2 underline-offset-4 border-blue-400" : "text-gray-800 dark:text-white"} hover:text-gray-900 dark:hover:text-blue-300 hover:scale-110 cursor-pointer`}
                                     inline-flex items-center text-sm font-semibold text-gray-800 hover:text-gray-900 hover:scale-110 cursor-pointer
                                 >
                                     FAQs
@@ -76,19 +102,31 @@ function Header({ logoName = "Lock-Tech Fitness", logoSrc = mainlogo, logoAlt = 
                             </li>
                         </ul>
                     </div>
-                    <div className="hidden space-x-2 lg:block">
+                    <div className="hidden space-x-2 lg:block items-center">
                         {user ? (
+                            <>
+                            <button
+                            className="h-8 w-8 rounded-lg mr-2 hover:bg-gray-300 dark:hover:bg-gray-700" onClick={toggleDarkMode}>
+                            {darkMode ? <img className="inline-block" src={sunIcon} alt="sun icon" /> : <img className="inline-block" src={moonIcon} alt="moon icon" />}
+                            </button>  
                             <button
                                 onClick={() => setShowModal(true)} // Show modal on logout click
                                 className="bg-red-500 text-white py-2 px-4 rounded-lg shadow-md hover:bg-red-600 transition duration-300"
                             >
                                 {btnText3}
                             </button>
+                            </>
+                           
                         ) : (
                             <>
+                            <button
+                            className="h-8 w-8 rounded-lg mr-2 hover:bg-gray-300 dark:hover:bg-gray-700" onClick={toggleDarkMode}>
+                            {darkMode ? <img className="inline-block" src={sunIcon} alt="sun icon" /> : <img className="inline-block" src={moonIcon} alt="moon icon" />}
+                            </button>   
+
                                 <NavLink
                                 to="/SignUp"
-                                className=  {({isActive}) => `rounded-md px-3 py-2 text-sm font-semibold ${isActive ? "text-black bg-black/10" : "text-black bg-transparent"} hover:bg-black/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black hover:scale-105 cursor-pointer`}
+                                className=  {({isActive}) => `rounded-md px-3 py-2 text-sm font-semibold ${isActive ? "text-black dark:text-white bg-black/10 dark:bg-white/40" : "text-black dark:text-white bg-transparent dark:border dark:border-white"} hover:bg-black/10 dark:hover:bg-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black hover:scale-105 cursor-pointer`}
                                 >
                                  {btnText1}
                                 </NavLink>
@@ -98,7 +136,7 @@ function Header({ logoName = "Lock-Tech Fitness", logoSrc = mainlogo, logoAlt = 
                                 className={({ isActive }) => 
                                 `rounded-md border border-black px-3 py-2 text-sm font-semibold 
                                 ${isActive ? "bg-indigo-500 border-none text-white" 
-                                : "text-black shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"}  hover:bg-indigo-500 hover:border-none hover:text-white
+                                : "text-black dark:text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black dark:border-white"}  hover:bg-indigo-500 hover:border-none hover:text-white
                                  transition-all duration-100 ease-in-out cursor-pointer`}
                                 >
                                 {btnText2}
@@ -108,6 +146,11 @@ function Header({ logoName = "Lock-Tech Fitness", logoSrc = mainlogo, logoAlt = 
                     </div>
                     <div className="lg:hidden">
                         {menuOpen ? (
+                            <>
+                            <button
+                            className="h-8 w-8 rounded-lg mr-2 hover:bg-gray-300 dark:hover:bg-gray-700" onClick={toggleDarkMode}>
+                            {darkMode ? <img className="inline-block" src={sunIcon} alt="sun icon" /> : <img className="inline-block" src={moonIcon} alt="moon icon" />}
+                            </button> 
                             <svg
                                 onClick={toggleMenu} // Cross icon to close menu
                                 xmlns="http://www.w3.org/2000/svg"
@@ -118,12 +161,18 @@ function Header({ logoName = "Lock-Tech Fitness", logoSrc = mainlogo, logoAlt = 
                                 strokeWidth="2"
                                 strokeLinecap="round"
                                 strokeLinejoin="round"
-                                className="h-6 w-6 cursor-pointer"
+                                className="h-6 w-6 cursor-pointer dark:text-sky-400 inline-block"
                             >
                                 <line x1="4" y1="4" x2="20" y2="20"></line>
                                 <line x1="20" y1="4" x2="4" y2="20"></line>
                             </svg>
+                            </>
                         ) : (
+                            <>
+                            <button
+                            className="h-8 w-8 rounded-lg mr-2 hover:bg-gray-300 dark:hover:bg-gray-700" onClick={toggleDarkMode}>
+                            {darkMode ? <img className="inline-block" src={sunIcon} alt="sun icon" /> : <img className="inline-block" src={moonIcon} alt="moon icon" />}
+                            </button>  
                             <svg
                                 onClick={toggleMenu} // Hamburger icon to open menu
                                 xmlns="http://www.w3.org/2000/svg"
@@ -134,18 +183,20 @@ function Header({ logoName = "Lock-Tech Fitness", logoSrc = mainlogo, logoAlt = 
                                 strokeWidth="2"
                                 strokeLinecap="round"
                                 strokeLinejoin="round"
-                                className="h-6 w-6 cursor-pointer"
+                                className="h-6 w-6 cursor-pointer dark:text-sky-400 inline-block"
                             >
                                 <line x1="4" y1="12" x2="20" y2="12"></line>
                                 <line x1="4" y1="6" x2="20" y2="6"></line>
                                 <line x1="4" y1="18" x2="20" y2="18"></line>
                             </svg>
+                            </>
+                            
                         )}
                     </div>
                 </div>
                 {menuOpen && ( // Conditionally render mobile menu
                     <div className="lg:hidden">
-                        <ul className="flex flex-col items-center space-y-4 bg-blue-50 rounded-lg py-4">
+                        <ul className="flex flex-col items-center space-y-4 bg-blue-50 dark:bg-slate-300 rounded-lg py-4">
                             <li>
                                 <NavLink
                                     to="/About"
@@ -179,14 +230,14 @@ function Header({ logoName = "Lock-Tech Fitness", logoSrc = mainlogo, logoAlt = 
                                     <>
                                         <NavLink
                                             to="/SignUp"
-                                            className="text-sm font-semibold text-blue-500 hover:text-gray-900"
+                                            className="text-sm font-semibold text-blue-500 dark:text-sky-500 hover:text-gray-900 dark:hover:text-sky-600"
                                             onClick={() => setMenuOpen(false)} // Close menu on link click
                                         >
                                             {btnText1}
                                         </NavLink>
                                         <NavLink
                                             to="/LogIn"
-                                            className="text-sm font-semibold text-blue-500 hover:text-gray-900"
+                                            className="text-sm font-semibold text-blue-500 dark:text-sky-500 hover:text-gray-900 dark:hover:text-sky-600"
                                             onClick={() => setMenuOpen(false)} // Close menu on link click
                                         >
                                             {btnText2}

@@ -53,8 +53,8 @@ function SignUp() {
     // };
 
     return (
-        <div className="flex flex-col items-center justify-center my-6 md:my-0 md:min-h-screen md:bg-gradient-to-b from-white via-blue-50 to-blue-100 p-4 md:p-6 rounded-lg">
-            <div className="bg-white md:shadow-lg shadow-xl rounded-lg p-6 md:p-8 max-w-sm w-full">
+        <div className="flex flex-col items-center justify-center my-6 md:my-0 md:min-h-screen md:dark:bg-gradient-to-b dark:from-gray-800 dark:via-slate-700 dark:to-gray-800  md:bg-gradient-to-b from-white via-blue-50 to-blue-100 p-4 md:p-6 rounded-lg">
+            <div className="bg-white dark:bg-gray-800 md:shadow-lg shadow-xl dark:shadow-neon-blue-two rounded-lg p-6 md:p-8 max-w-sm w-full">
                 {/* 
                 This logic displays content based on the user's authentication status. 
                 Currently, we manage authentication using modal, content, header, and tech content components.
@@ -65,7 +65,7 @@ function SignUp() {
                     <div className="text-center">
                         <div className="flex flex-col items-center justify-center mb-4 md:mb-6 text-lg md:text-2xl font-semibold text-gray-900 dark:text-white">
                             <img className="w-10 h-10 md:w-12 md:h-12 mb-2" src={mainLogo} alt="LockTechFitness" />
-                            <span className="text-center">Lock-Tech Fitness</span>
+                            <span className="text-center text-black dark:text-white">Lock-Tech Fitness</span>
                         </div>
                         <h1 className="text-xl md:text-2xl text-green-600 font-bold mb-4">Authenticated.</h1>
                         <h2 className="text-xl md:text-2xl text-green-600 font-bold mb-4">Welcome, You are Signed in!</h2>
@@ -75,17 +75,17 @@ function SignUp() {
                     <div className="text-center">
                         <div className="flex flex-col items-center justify-center mb-4 md:mb-6 text-lg md:text-2xl font-semibold text-gray-900 dark:text-white">
                             <img className="w-10 h-10 md:w-12 md:h-12 mb-2" src={mainLogo} alt="LockTechFitness" />
-                            <span className="text-center text-black">Lock-Tech Fitness</span>
+                            <span className="text-center text-black dark:text-white">Lock-Tech Fitness</span>
                         </div>
-                        <h1 className="text-xl md:text-2xl font-bold mb-4 md:mb-6 text-center">Sign Up</h1>
-                        <p className="mb-4 md:mb-6 text-gray-600 text-sm md:text-base leading-relaxed px-2 md:px-4 py-2 bg-gray-50 border border-gray-200 rounded-lg shadow-sm">
+                        <h1 className="text-xl md:text-2xl font-bold mb-4 md:mb-6 text-center text-black dark:text-white">Sign Up</h1>
+                        <p className="mb-4 md:mb-6 text-gray-600 dark:text-white text-sm md:text-base leading-relaxed px-2 md:px-4 py-2 bg-gray-50 dark:bg-slate-800 border border-gray-200 rounded-lg shadow-sm">
                             Sign up to access exclusive insights and content for free.
                             Please take very good care of your health.
                         </p>
                         <div className="group">
                             <button
                                 onClick={signupWithGoogle}
-                                className="bg-blue-50 text-black py-2 px-4 mb-4 rounded-lg gap-2 shadow-md group-hover:bg-blue-100 group-hover:scale-105 transition duration-300 w-full flex items-center justify-center"
+                                className="bg-blue-50 text-black py-2 px-4 mb-4 rounded-lg gap-2 shadow-md dark:shadow-neon-blue-two group-hover:bg-blue-100 group-hover:scale-105 transition duration-300 w-full flex items-center justify-center"
                             >
                                 Sign Up with Google
                                 <img src={googleIcon} alt="GoogleIcon" width="24" height="24" />
@@ -94,7 +94,7 @@ function SignUp() {
                         <div className="group">
                             <button
                                 onClick={signupWithDiscord}
-                                className="bg-blue-50 text-black py-2 px-4 mb-4 rounded-lg gap-2 shadow-md group-hover:scale-105 group-hover:bg-blue-100 transition duration-200 w-full flex items-center justify-center"
+                                className="bg-blue-50 text-black py-2 px-4 mb-4 rounded-lg gap-2 shadow-md dark:shadow-neon-blue-two group-hover:scale-105 group-hover:bg-blue-100 transition duration-200 w-full flex items-center justify-center"
                             >
                                 Sign Up with Discord
                                 <img src={discordIcon} alt="GoogleIcon" width="24" height="24" />
@@ -103,14 +103,14 @@ function SignUp() {
                         <div className="group">
                             <button
                                 onClick={signup}
-                                className="bg-blue-50 text-black py-2 px-4 rounded-lg gap-2 shadow-md group-hover:scale-105 group-hover:bg-blue-100 transition duration-300 w-full flex items-center justify-center"
+                                className="bg-blue-50 text-black py-2 px-4 rounded-lg gap-2 shadow-md dark:shadow-neon-blue-two group-hover:scale-105 group-hover:bg-blue-100 transition duration-300 w-full flex items-center justify-center"
                             >
                                 Sign Up with GitHub
                                 <img src={githubIcon} alt="GoogleIcon" width="24" height="24" />
                             </button>
                         </div>
-                        <div className="mt-4 text-center text-gray-600 text-sm">
-                            Already have an account? <Link to="/LogIn" className="text-blue-500 hover:text-blue-600 font-medium">Login</Link>
+                        <div className="mt-4 text-center text-gray-600 dark:text-white text-sm">
+                            Already have an account? <Link to="/LogIn" className="text-blue-500 dark:text-sky-300 hover:text-blue-600 dark:hover:text-sky-400 font-medium">Login</Link>
                         </div>
                     </div>
                 )}

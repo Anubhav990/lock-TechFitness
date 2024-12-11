@@ -38,14 +38,14 @@ const steps = [
 
 function About() {
     return (
-        <section className="text-gray-600 body-font md:bg-gradient-to-b from-white to-blue-50 rounded-lg">
+        <section className="text-gray-600 dark:text-white dark:bg-gray-800 md:dark:bg-gradient-to-b dark:from-gray-800 dark:via-slate-700 dark:to-gray-800 body-font md:bg-gradient-to-b from-white to-blue-50 rounded-lg">
             <div className="container px-5 pt-16 pb-12 mx-auto flex flex-wrap flex-col items-center justify-center">
                 <div className="flex flex-col items-center mb-4">
                     <img className="w-10 h-10 md:w-12 md:h-12 mb-2" src={mainLogo} alt="LockTechFitness" />
-                    <span className="text-xl font-semibold text-gray-900">Lock-Tech Fitness</span>
+                    <span className="text-xl font-semibold text-gray-900 dark:text-white">Lock-Tech Fitness</span>
                 </div>
                 <div className="flex flex-col text-center pb-12 w-full">
-                    <h1 className="text-2xl font-medium title-font mb-4 text-blue-500">
+                    <h1 className="text-2xl font-medium title-font mb-4 text-blue-500 dark:text-sky-400">
                         About Us
                     </h1>
                     <p className="lg:w-2/3 mx-auto leading-relaxed text-base font-medium md:text-[16px] text-[10px]">
@@ -68,8 +68,8 @@ function About() {
                                     />
                                 </div>
                                 <div className="flex-grow sm:pl-6 mt-6 sm:mt-0">
-                                    <h2 className="font-medium title-font text-blue-500 mb-1 text-xl">{step.title}</h2>
-                                    <p className="leading-relaxed text-black font-medium">{step.description}</p>
+                                    <h2 className="font-medium title-font text-blue-500 dark:text-sky-400 mb-1 text-xl">{step.title}</h2>
+                                    <p className="leading-relaxed text-black dark:text-white font-medium">{step.description}</p>
                                 </div>
                             </div>
                         </div>

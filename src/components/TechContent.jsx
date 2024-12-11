@@ -72,12 +72,12 @@ function TechContent({
             <div className="container px-5 pt-12 md:pt-20 pb-2 mx-auto">
                 <div className="flex flex-wrap w-full md:mb-8">
                     <div className="lg:w-1/2 w-full mb-8 md:mb-6 lg:mb-0">
-                        <h1 className="text-3xl font-medium title-font mb-2 text-gray-900 text-center lg:text-left">
+                        <h1 className="text-3xl font-medium title-font mb-2 text-gray-900 dark:text-white text-center lg:text-left">
                             Achieve Your Fitness Goals with Smart Tech Solutions
                         </h1>
-                        <div className="h-1 w-20 bg-indigo-500 rounded mx-auto lg:mx-0"></div>
+                        <div className="h-1 w-20 bg-indigo-500 dark:bg-sky-400 rounded mx-auto lg:mx-0"></div>
                     </div>
-                    <p className="lg:w-1/2 w-full leading-relaxed text-gray-500 text-center md:text-center font-medium md:text-[20px] md:pt-4">
+                    <p className="lg:w-1/2 w-full leading-relaxed text-gray-500 dark:text-gray-300 text-center md:text-center font-medium md:text-[20px] md:pt-4">
                         Transform Your Health with Smart Devices, Relaxation and VR Fitness!
                     </p>
                 </div>
@@ -96,7 +96,7 @@ function TechContent({
                         {techCards.map(({ id, iconSrc, iconAlt, title, description, background }) => (
                             <div
                                 key={id}
-                                className="relative group border p-6 rounded-lg flex flex-col items-center text-center border-indigo-100 bg-white shadow-lg shadow-gray-400 transition-transform duration-300 overflow-hidden hover:scale-105"
+                                className="relative group border p-6 rounded-lg flex flex-col items-center text-center border-indigo-100 bg-white dark:bg-gray-800 shadow-lg  shadow-gray-400 dark:shadow-neon-blue transition-transform duration-300 overflow-hidden hover:scale-105"
                             >
                                 {/* Background Image */}
                                 <div className={`absolute inset-0 bg-cover bg-center transition-opacity duration-300 ease-in-out ${background} group-hover:opacity-30 opacity-30  md:opacity-0`} />
@@ -111,9 +111,9 @@ function TechContent({
                                             height="30"
                                         />
                                     </div>
-                                    <h2 className="text-gray-900 text-lg title-font font-medium mb-3">{title}</h2>
-                                    <p className="leading-relaxed text-gray-900 md:text-gray-500 font-medium group-hover:text-black text-base">{description}</p>
-                                    <button onClick={handleLearnMoreClick} className="mt-3 text-white inline-flex items-center bg-black border-0 py-2 px-4 rounded-lg group-hover:bg-indigo-500 group-hover:text-white transition-all duration-75 ease-in">
+                                    <h2 className="text-gray-900 dark:text-white text-lg title-font font-medium mb-3">{title}</h2>
+                                    <p className="leading-relaxed text-gray-900 dark:text-white md:text-gray-500 dark:md:text-white font-medium group-hover:text-black dark:group-hover:text-white text-base">{description}</p>
+                                    <button onClick={handleLearnMoreClick} className="mt-3 text-white inline-flex items-center bg-black dark:bg-sky-400 border-0 py-2 px-4 rounded-lg group-hover:bg-indigo-500 dark:group-hover:bg-sky-500 group-hover:text-white transition-all duration-75 ease-in">
                                         Learn More
                                     </button>
                                 </div>

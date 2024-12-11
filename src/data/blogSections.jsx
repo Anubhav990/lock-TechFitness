@@ -84,7 +84,7 @@ export const blogSections = [
                 </p>
 
                 <div className="flex flex-col sm:flex-row items-center my-4">
-                    <span className="text-black font-medium text-center">Original/Fundamental exercise</span>
+                    <span className="text-black dark:text-white font-medium text-center">Original/Fundamental exercise</span>
 
                     {/* Right Arrow for larger screens */}
                     <img src={rightarrow} width="25" height="25" className="hidden sm:inline text-black shadow-neon-blue inline align-middle mx-4 rounded-3xl" />
@@ -92,7 +92,7 @@ export const blogSections = [
                     {/* Down Arrow for mobile screens */}
                     <img src={bottomarrow} width="25" height="25" className="inline sm:hidden text-black shadow-neon-blue inline align-middle my-4 rounded-3xl" />
 
-                    <span className="text-black font-medium text-center">Explosive Version of the Same Exercise</span>
+                    <span className="text-black dark:text-white font-medium text-center">Explosive Version of the Same Exercise</span>
 
                     {/* Right Arrow for larger screens */}
                     <img src={rightarrow} width="25" height="25" className="hidden sm:inline text-black shadow-neon-blue inline align-middle mx-4 rounded-3xl" />
@@ -100,7 +100,7 @@ export const blogSections = [
                     {/* Down Arrow for mobile screens */}
                     <img src={bottomarrow} width="25" height="25" className="inline sm:hidden text-black shadow-neon-blue inline align-middle my-4 rounded-3xl" />
 
-                    <span className="text-black font-medium text-center">Advanced Explosive Variations of the Exercise</span>
+                    <span className="text-black dark:text-white font-medium text-center">Advanced Explosive Variations of the Exercise</span>
                 </div>
                 <p>
                     For example, start with standard push-ups, then progress to explosive push-ups, clapping push-ups & variations like incline, decline, wide grip & close grip clapping push-ups. Other <span className="bg-blue-100 font-medium text-black">exercises to try in a similar progression are Jump Squats, Box Jumps, Burpees, Lateral Bounds, Tuck Jumps, Medicine Ball Slams & Broad Jumps.</span></p>
