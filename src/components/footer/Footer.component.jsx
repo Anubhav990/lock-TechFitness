@@ -16,8 +16,6 @@ const services = [
 const contact = [
     { text: "locktechfitness@gmail.com" },
     { text: "Follow on X", href: "https://x.com/Anubhav990" },
-    { text: "Join us on Discord", href: "https://discord.gg/rGpkzmsz" }, // Updated URL
-    { text: "Instagram", href: "https://www.instagram.com/_anubhav_990/" }, // Updated URL
 ];
 
 const socialLinks = [
