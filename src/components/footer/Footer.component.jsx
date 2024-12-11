@@ -55,9 +55,7 @@ const certificationsAndAssociations = [
 const address = [
     "Industrial Area",
     "Phase - 8",
-    "S.A.S Nagar",
-    "Punjab, India"
-
+    "Punjab, India",
 ];
 
 function Footer({ LogoName = "Lock-Tech Fitness", logoAlt = "LockTechFitness", LogoSrc = mainlogo }) {
