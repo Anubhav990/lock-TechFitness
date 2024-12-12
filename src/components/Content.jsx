@@ -92,7 +92,7 @@ function Content({
             iconSrc: iconSrc6,
             iconAlt: iconAlt6,
             title: "Resistance Training",
-            description: "Explore resistance training with a focus on strength, hypertrophy & endurance to boost muscle growth and performance.",
+            description: "Explore resistance training with a focus on strength, hypertrophy & endurance to boost performance.",
             background: 'bg-resistance' // Replace with your actual background class
         }
     ];
